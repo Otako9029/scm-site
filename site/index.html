@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SCM Pipeline Demo</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Software Configuration Management</h1>
+    <p>A static site deployed automatically with GitHub Actions.</p>
+    <button id="theme-toggle" type="button">Toggle theme</button>
+  </header>
+
+  <main>
+    <section>
+      <h2>Pipeline</h2>
+      <ol id="pipeline">
+        <li>Push to <code>main</code></li>
+        <li>ESLint checks the JavaScript</li>
+        <li>Site is packaged as a Pages artifact</li>
+        <li>Site is deployed to GitHub Pages</li>
+      </ol>
+    </section>
+
+    <section>
+      <h2>Live check</h2>
+      <p>Page loaded at: <strong id="loaded-at"></strong></p>
+      <button id="highlight-btn" type="button">Run pipeline animation</button>
+    </section>
+  </main>
+
+  <footer>
+    <p>CI/CD demo &middot; HTML, CSS, JS &middot; GitHub Pages</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
